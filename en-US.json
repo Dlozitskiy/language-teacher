@@ -1,0 +1,118 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "language teacher",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AskIntent",
+                    "slots": [
+                        {
+                            "name": "phrase",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "to say {phrase} ",
+                        "to translate {phrase} ",
+                        "ask how to say {phrase} ",
+                        "ask how to translate {phrase} ",
+                        "say {phrase} ",
+                        "translate {phrase} ",
+                        "how to say {phrase}",
+                        "how to translate {phrase}"
+                    ]
+                },
+                {
+                    "name": "RepeatIntent",
+                    "slots": [],
+                    "samples": [
+                        "ask to repeat",
+                        "ask him to repeat",
+                        "say again",
+                        "repeat"
+                    ]
+                },
+                {
+                    "name": "SetLanguage",
+                    "slots": [
+                        {
+                            "name": "language",
+                            "type": "language"
+                        }
+                    ],
+                    "samples": [
+                        "{language}",
+                        "set a language to {language}",
+                        " set the language to {language}",
+                        "set language to {language}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "language",
+                    "values": [
+                        {
+                            "id": "es",
+                            "name": {
+                                "value": "Spanish"
+                            }
+                        },
+                        {
+                            "id": "ru",
+                            "name": {
+                                "value": "Russian"
+                            }
+                        },
+                        {
+                            "id": "pt",
+                            "name": {
+                                "value": "Portuguese"
+                            }
+                        },
+                        {
+                            "id": "ja",
+                            "name": {
+                                "value": "Japanese"
+                            }
+                        },
+                        {
+                            "id": "it",
+                            "name": {
+                                "value": "Italian"
+                            }
+                        },
+                        {
+                            "id": "de",
+                            "name": {
+                                "value": "German"
+                            }
+                        },
+                        {
+                            "id": "fr",
+                            "name": {
+                                "value": "French"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

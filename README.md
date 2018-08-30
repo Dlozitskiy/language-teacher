@@ -1,2 +1,2 @@
 # language-teacher
-Alexa skill powered by AWS Polly, AWS Translate
+Alexa skill powered by AWS Polly and AWS Translate
